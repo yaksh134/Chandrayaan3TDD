@@ -82,12 +82,12 @@ public class GalacticSpaceCraftController {
 
 	// function to turn space craft in upward direction
 	public void turnUp() {
-
+		direction = "U";
 	}
 
 	// function to turn space craft in down direction
 	public void turnDown() {
-
+		 direction = "D";
 	}
 
 	
