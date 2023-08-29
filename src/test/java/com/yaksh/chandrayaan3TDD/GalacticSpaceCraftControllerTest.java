@@ -240,5 +240,22 @@ public class GalacticSpaceCraftControllerTest {
 		spacecraft = new GalacticSpaceCraftController(0, 0, 0, "D");
 		assertEquals("(0,0,0)-U", spacecraft.executeCommands("u"));
 	}
+	
+	
+//	Complex Test Cases
+	
+//	Initial Position-(0,0,0)-N Final-(0,1,-1)-N command-"frubl"
+	@Test
+    public void complexTestCase1() {
+        spacecraft = new GalacticSpaceCraftController(0,0,0,"N");
+        assertEquals("(0,1,-1)-N", spacecraft.executeCommands("frubl"));
+	}
+	
+//	Initial Position-(0,0,0)-N Final-(0,2,-2)-U,command="ffrubb"
+	@Test
+    public void complexTestCase2() {
+        spacecraft = new GalacticSpaceCraftController(0,0,0,"N");
+        assertEquals("(0,2,-2)-U", spacecraft.executeCommands("ffrubb"));
+	}
 
 }
